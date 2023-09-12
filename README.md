@@ -11,3 +11,10 @@ ssh-keygen
 cd ../
 vagrant up
 ```
+
+#### Spin up k8s cluster
+```
+vagrant ssh
+cd k8s-cop/1-single-cluster/setup/
+./setup-kindcluster123.sh
+```
