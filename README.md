@@ -12,12 +12,14 @@ vi networks.conf
 ```
 
 # hellocloudio GitHub Account
+```
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/github.com.hellocloudio
 ssh -T git@github.com
 
 git config user.name "hellocloudio"
 git config user.email "helloocloud@gmail.com"
+```
 
 #### Up and Running vagrant box
 ```
