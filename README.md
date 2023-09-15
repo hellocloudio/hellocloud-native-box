@@ -69,3 +69,13 @@ source_profile = gritworks-nonprod
 role_arn = arn:aws:iam::xxxxxxxxxxxx:role/gritworks-security-terraform-role
 
 ```
+#### aws credentials
+```
+cat ~/.aws/credentials
+```
+```
+# gritworks-nonprod
+[gritworks-nonprod]
+aws_access_key_id =
+aws_secret_access_key =
+```
