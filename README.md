@@ -10,6 +10,15 @@ vi networks.conf
 * 0.0.0.0/0 ::/0
 :wq!
 ```
+
+# hellocloudio GitHub Account
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/github.com.hellocloudio
+ssh -T git@github.com
+
+git config user.name "hellocloudio"
+git config user.email "helloocloud@gmail.com"
+
 #### Up and Running vagrant box
 ```
 git clone git@github.com:hellocloudio/hellocloud-native-box.git
