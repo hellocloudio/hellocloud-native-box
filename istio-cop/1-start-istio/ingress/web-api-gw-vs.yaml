@@ -1,0 +1,15 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: web-api-gw-vs
+spec:
+  hosts:
+  - "hellocloud.io"
+  gateways:
+  - web-api-gateway
+  http:
+  - route:
+    - destination:
+        host: web-api.default.svc.cluster.local # fix it
+        port:
+          number: 8080
