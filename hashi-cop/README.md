@@ -1,3 +1,5 @@
+## Hashi Tools Setup on Mac
+
 #### Install Vault
 ```
 https://developer.hashicorp.com/vault/tutorials/getting-started/getting-started-install
@@ -7,6 +9,25 @@ brew install hashicorp/tap/vault
 
 # To update latest
 brew upgrade hashicorp/tap/vault
+
+```
+#### Install Terraform
+```
+https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
+
+brew tap hashicorp/tap
+brew install hashicorp/tap/terraform
+terraform -install-autocomplete
+```
+#### Install AWS CLI
+```
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
+curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+sudo installer -pkg AWSCLIV2.pkg -target /
+
+$ which aws
+/usr/local/bin/aws
 
 ```
 #### ~/.bash_profle
