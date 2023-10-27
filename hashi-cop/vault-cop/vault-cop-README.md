@@ -111,6 +111,7 @@ injector:
 EOF
 ```
 #### Install Vault
+#### This creates three Vault server instances with an Integrated Storage (Raft) backend.
 ```
 kubectl create ns vault
 helm install vault hashicorp/vault --values helm-vault-raft-values.yml -n vault
