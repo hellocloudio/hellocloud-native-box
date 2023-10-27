@@ -92,7 +92,10 @@ helm pull hashicorp/vault --version 0.25.0 --untar
 # How to Dry Run
 helm install vault hashicorp/vault --namespace vault --dry-run
 
-# Create a file named helm-vault-raft-values.yml with the following contents:
+```
+#### Install Vault
+#### Create a file named helm-vault-raft-values.yml with the following contents:
+```
 cat > helm-vault-raft-values.yml <<EOF
 server:
   affinity: ""
@@ -106,8 +109,9 @@ ui:
 injector:
   enabled: true
 EOF
-
-# Install Vault
+```
+#### Install Vault
+```
 kubectl create ns vault
 helm install vault hashicorp/vault --values helm-vault-raft-values.yml -n vault
 ```
