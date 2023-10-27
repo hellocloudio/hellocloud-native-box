@@ -1,13 +1,5 @@
 # hellocloud-native-box
 
-#### generate public/private key pair
-```
-git clone git@github.com:hellocloudio/hellocloud-native-box.git
-cd hellocloud-native-box
-mkdir .ssh
-cd .ssh
-ssh-keygen
-```
 #### Create /etc/vbox/networks.conf
 ```
 sudo su
