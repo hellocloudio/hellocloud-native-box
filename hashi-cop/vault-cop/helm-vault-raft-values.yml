@@ -1,0 +1,11 @@
+server:
+  affinity: ""
+  ha:
+    enabled: true
+    raft: 
+      enabled: true
+ui:
+  enabled: true
+  serviceType: "LoadBalancer"
+injector:
+  enabled: true
