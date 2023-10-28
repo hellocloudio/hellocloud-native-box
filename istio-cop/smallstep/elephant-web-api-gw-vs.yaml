@@ -1,0 +1,15 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: elephant-web-api-gw-vs
+spec:
+  hosts:
+  - "elephant.io"
+  gateways:
+  - elephant-web-api-gateway
+  http:
+  - route:
+    - destination:
+        host: web-api.elephant.svc.cluster.local
+        port:
+          number: 8080
