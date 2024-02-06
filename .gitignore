@@ -1,5 +1,6 @@
 # linux environment files
 .bash_history
+.bash_profile
 .cache
 .sudo_as_admin_successful
 .vagrant/
