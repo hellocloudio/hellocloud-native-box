@@ -5,13 +5,15 @@
 - Initially, `hc_id_rsa` SSH Key will generate when you this script.
 - But it will prompt you to overwrite (y/n) for SSH Key if you've created before.
 - Secondly, highly recommened to specify your `VagrantBox SSH Key Path`, instead of using default path.
+- Option: you can comment off the other tools installation as you want.
 
 ```
 ./ssh-vagrant.sh
 ```
 
-
 #### Example input of SSH Key path
+![ssh-key-path](https://github.com/htoohtooaungcloud/Terraform/assets/54118047/8b7bf92b-201e-479b-9a76-01b8c6beece1)
+
 
 ### Spin-up the Kubernetes Cluster using Cilium as CNI
 - Go the manifests directory and run the scrip `setup-mlb-13-cilium-k8s-v127.sh`
@@ -19,10 +21,13 @@
 - However, if you wanna add more worker-nodes, go to he `/manitests/kind-cluster/kindconfig-v1270.yaml` file and configure.
 - Even though using the `Cilium` as CNI, Load-Balancer still using `Metallb` but Version is v.13.
 
+
 ```
 cd ~/manifests
 ./setup-mlb-13-cilium-k8s-v127.sh
 ```
+#### Up and running `Kubernetes Cluster` with `Cilium` and `Metallb`
+![cilium-k8s-metallb](https://github.com/htoohtooaungcloud/Terraform/assets/54118047/1dbceee0-ede0-48e6-95c1-d546d5d1f035)
 
 #### Create /etc/vbox/networks.conf
 ```
